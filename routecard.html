@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mumbai City - Transport Routes</title>
+    <!-- Google Fonts: Cinzel -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&display=swap" rel="stylesheet">
+    <!-- Internal CSS for navigation menu (consistent with main portal) -->
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        header, nav {
+            font-family: 'Cinzel', serif;
+        }
+        nav {
+            background: #6e5849;
+            padding: 0.5rem 0;
+            box-shadow: 0 2px 8px rgba(110,88,73,0.08);
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1.5rem;
+        }
+        nav ul li a {
+            color: #f5e9da;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            transition: color 0.2s;
+        }
+        nav ul li a:hover {
+            color: #bfa980;
+        }
+        /* Delay Alert Animation */
+        .delay-alert {
+            background: #ffebee;
+            color: #b71c1c;
+            border: 2px solid #b71c1c;
+            border-radius: 8px;
+            padding: 1rem 1.5rem;
+            margin: 1.5rem auto 1.5rem auto;
+            max-width: 600px;
+            text-align: center;
+            font-size: 1.15rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            animation: blink-delay 5s linear infinite;
+            box-shadow: 0 2px 12px rgba(183,28,28,0.08);
+        }
+        @keyframes blink-delay {
+            0%, 100% { background: #ffebee; color: #b71c1c; }
+            50% { background: #b71c1c; color: #fff; }
+        }
+    </style>
+    <!-- External CSS link for page layout -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 style="color: #4b3a2f; font-size: 2.3rem; margin: 0; text-align: center; letter-spacing: 2px; font-family: 'Cinzel', serif; font-weight: 900;">Mumbai City - Transport Routes</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Book Ticket</a></li>
+            <li><a href="#">Routes</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="delay-alert">
+            &#9888; Delay Alert: Route 202 is currently delayed by 20 minutes due to traffic congestion.
+        </div>
+        <div class="route-sections-flex">
+            <section>
+                <h2 class="intro" style="font-family: 'Cinzel', serif; text-align:center;">Mumbai Metro Routes</h2>
+                <div class="route-cards">
+                    <div class="route-card" id="highlighted-route">
+                        <div class="route-number">Metro Line 1</div>
+                        <div class="stop-sequence"><strong>Stops:</strong> Versova → Andheri → Ghatkopar</div>
+                        <div class="timing"><strong>Timings:</strong> 5:30 AM - 11:30 PM (Every 5 min)</div>
+                    </div>
+                    <div class="route-card">
+                        <div class="route-number">Metro Line 2A</div>
+                        <div class="stop-sequence"><strong>Stops:</strong> Dahisar East → D N Nagar</div>
+                        <div class="timing"><strong>Timings:</strong> 6:00 AM - 10:30 PM (Every 7 min)</div>
+                    </div>
+                    <div class="route-card">
+                        <div class="route-number">Metro Line 7</div>
+                        <div class="stop-sequence"><strong>Stops:</strong> Dahisar East → Gundavli</div>
+                        <div class="timing"><strong>Timings:</strong> 6:00 AM - 10:30 PM (Every 7 min)</div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2 class="intro" style="font-family: 'Cinzel', serif; text-align:center;">Mumbai Bus Routes</h2>
+                <div class="route-cards">
+                    <div class="route-card">
+                        <div class="route-number">Route 101</div>
+                        <div class="stop-sequence"><strong>Stops:</strong> CSMT → Dadar → Bandra → Andheri</div>
+                        <div class="timing"><strong>Timings:</strong> 6:00 AM - 10:00 PM (Every 20 min)</div>
+                    </div>
+                    <div class="route-card">
+                        <div class="route-number">Route 202</div>
+                        <div class="stop-sequence"><strong>Stops:</strong> Borivali → Malad → Goregaon → Dadar</div>
+                        <div class="timing"><strong>Timings:</strong> 5:30 AM - 11:00 PM (Every 30 min)</div>
+                    </div>
+                    <div class="route-card">
+                        <div class="route-number">Route 303</div>
+                        <div class="stop-sequence"><strong>Stops:</strong> Kurla → Sion → Chembur → Vashi</div>
+                        <div class="timing"><strong>Timings:</strong> 7:00 AM - 9:00 PM (Every 40 min)</div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2 class="intro" style="font-family: 'Cinzel', serif; text-align:center;">Mumbai Local Train Routes</h2>
+                <div class="route-cards">
+                    <div class="route-card">
+                        <div class="route-number">Western Line</div>
+                        <div class="stop-sequence"><strong>Stops:</strong> Churchgate → Dadar → Bandra → Andheri → Borivali → Virar</div>
+                        <div class="timing"><strong>Timings:</strong> 4:15 AM - 1:00 AM (Every 3-10 min)</div>
+                    </div>
+                    <div class="route-card">
+                        <div class="route-number">Central Line</div>
+                        <div class="stop-sequence"><strong>Stops:</strong> CSMT → Dadar → Thane → Kalyan → Kasara/Karjat</div>
+                        <div class="timing"><strong>Timings:</strong> 4:10 AM - 12:30 AM (Every 4-12 min)</div>
+                    </div>
+                    <div class="route-card">
+                        <div class="route-number">Harbour Line</div>
+                        <div class="stop-sequence"><strong>Stops:</strong> CSMT → Vadala Road → Kurla → Mankhurd → Panvel</div>
+                        <div class="timing"><strong>Timings:</strong> 4:45 AM - 12:00 AM (Every 8-15 min)</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer style="margin-top: auto;">
+        <p>&copy; 2026 Mumbai Transport Portal. All rights reserved.</p>
+    </footer>
+</body>
+</html>

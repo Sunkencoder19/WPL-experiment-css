@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mumbai Metro Route Stops</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background: #f8f4e6;
+            margin: 0;
+            padding: 0;
+            color: #4b3a2f;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header, nav {
+            font-family: 'Cinzel', serif;
+        }
+        header {
+            background: #f5e9da;
+            box-shadow: 0 2px 8px rgba(75,58,47,0.06);
+            padding-bottom: 1rem;
+        }
+        h1 {
+            text-align: center;
+            font-family: 'Cinzel', serif;
+            color: #6e5849;
+            margin: 2rem 0 0.5rem 0;
+            font-size: 2.3rem;
+            letter-spacing: 2px;
+            font-weight: 900;
+        }
+        nav {
+            background: #6e5849;
+            padding: 0.5rem 0;
+            box-shadow: 0 2px 8px rgba(110,88,73,0.08);
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1.5rem;
+        }
+        nav ul li a {
+            color: #f5e9da;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            transition: color 0.2s;
+        }
+        nav ul li a:hover {
+            color: #bfa980;
+        }
+        .metro-route-container {
+            max-width: 800px;
+            margin: 2.5rem auto;
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 4px 24px rgba(110,88,73,0.10);
+            padding: 2rem 2.5rem;
+        }
+        .route-title {
+            font-family: 'Cinzel', serif;
+            color: #6e5849;
+            font-size: 1.4rem;
+            margin-bottom: 1.2rem;
+            text-align: center;
+        }
+        .stop-sequence-flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 0.7rem;
+            margin-bottom: 1.5rem;
+        }
+        .stop-sequence-flex .stop {
+            background: #e7dbc3;
+            color: #4b3a2f;
+            border-radius: 8px;
+            padding: 0.5rem 1.1rem;
+            font-size: 1.08rem;
+            font-weight: 600;
+            box-shadow: 0 2px 8px rgba(110,88,73,0.07);
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .stop-sequence-flex .arrow {
+            color: #bfa980;
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin: 0 0.2rem;
+        }
+        @media (max-width: 600px) {
+            .metro-route-container {
+                padding: 1rem 0.5rem;
+            }
+            .stop-sequence-flex .stop {
+                font-size: 0.98rem;
+                padding: 0.4rem 0.7rem;
+            }
+        }
+        footer {
+            text-align: center;
+            padding: 1.2rem 0 0.7rem 0;
+            color: #6e5849;
+            font-size: 1rem;
+            background: transparent;
+            font-family: 'Times New Roman', Times, serif;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mumbai Metro Route Stops</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Book Ticket</a></li>
+            <li><a href="#">Routes</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="metro-route-container">
+            <div class="route-title">Metro Line 1: Versova to Ghatkopar</div>
+            <div class="stop-sequence-flex">
+                <span class="stop">Versova</span>
+                <span class="arrow">→</span>
+                <span class="stop">D N Nagar</span>
+                <span class="arrow">→</span>
+                <span class="stop">Azad Nagar</span>
+                <span class="arrow">→</span>
+                <span class="stop">Andheri</span>
+                <span class="arrow">→</span>
+                <span class="stop">Western Express Highway</span>
+                <span class="arrow">→</span>
+                <span class="stop">Chakala</span>
+                <span class="arrow">→</span>
+                <span class="stop">Marol Naka</span>
+                <span class="arrow">→</span>
+                <span class="stop">Saki Naka</span>
+                <span class="arrow">→</span>
+                <span class="stop">Asalpha</span>
+                <span class="arrow">→</span>
+                <span class="stop">Jagruti Nagar</span>
+                <span class="arrow">→</span>
+                <span class="stop">Ghatkopar</span>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 Mumbai Transport Portal. All rights reserved.</p>
+    </footer>
+</body>
+</html>

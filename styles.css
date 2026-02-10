@@ -1,0 +1,195 @@
+.navbar-menu a:hover {
+    color: #ffb300;
+    text-shadow: 0 2px 8px rgba(255,179,0,0.12);
+}
+/* Responsive Design: Media Queries */
+@media (max-width: 900px) {
+    .route-sections-flex {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: stretch;
+    }
+    .route-sections-flex section {
+        max-width: 100%;
+        min-width: 0;
+        margin: 0 auto;
+    }
+    main {
+        padding: 1rem 0.5rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .route-cards {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+    .feature-card, .route-card {
+        max-width: 100%;
+        min-width: 0;
+        padding: 1rem 0.7rem;
+    }
+    .intro h2, .route-card .route-number, .feature-card h3 {
+        font-size: 1.2rem;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    nav ul li {
+        margin: 0.3rem 0;
+    }
+    header h1, h1 {
+        font-size: 1.5rem !important;
+    }
+}
+/* Flex container for parallel route sections */
+.route-sections-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 2.5rem 0;
+    flex-wrap: wrap;
+}
+.route-sections-flex section {
+    flex: 1 1 320px;
+    min-width: 300px;
+    max-width: 370px;
+    background: #f5e9da;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(110,88,73,0.10);
+    padding: 1.2rem 1rem 2rem 1rem;
+    margin: 0;
+}
+/* Route Cards Styling */
+.route-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    align-items: stretch;
+    margin: 2.5rem 0;
+    width: 100%;
+}
+
+.route-card {
+    background: #f8f4e6;
+    border: 2px solid #bfa980;
+    border-radius: 14px;
+    box-shadow: 0 2px 10px rgba(110,88,73,0.10);
+    padding: 1.5rem 1.2rem;
+    min-width: 240px;
+    max-width: 320px;
+    flex: 1 1 260px;
+    margin-bottom: 1.5rem;
+    transition: box-shadow 0.2s, border-color 0.2s;
+    font-family: 'Times New Roman', Times, serif;
+}
+.route-card:hover {
+    box-shadow: 0 8px 24px rgba(110,88,73,0.18);
+    border-color: #6e5849;
+}
+
+#highlighted-route {
+    border: 2.5px solid #6e5849;
+    background: #e7dbc3;
+    box-shadow: 0 6px 24px rgba(110,88,73,0.18);
+}
+
+/* Group selectors for text formatting */
+.route-card h4, .route-card .route-number {
+    color: #6e5849;
+    font-family: 'Cinzel', serif;
+    font-size: 1.3rem;
+    margin-bottom: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.route-card .stop-sequence, .route-card .timing {
+    color: #4b3a2f;
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+/* External CSS for overall page layout and design */
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(120deg, #e7e2d1 0%, #bfa980 100%);
+    color: #4b3a2f;
+}
+
+header, nav {
+    font-family: 'Cinzel', serif;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto 0 auto;
+    background: #f5e9da;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(110,88,73,0.10);
+    padding: 2rem 2.5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.intro {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.intro h2 {
+    color: #6e5849;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+}
+.intro p {
+    color: #4b3a2f;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+.features {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.feature-card {
+    background: #e7dbc3;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(110,88,73,0.10);
+    padding: 1.5rem 1.2rem;
+    flex: 1 1 220px;
+    min-width: 220px;
+    max-width: 270px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-family: 'Times New Roman', Times, serif;
+}
+.feature-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(110,88,73,0.18);
+}
+.feature-card h3 {
+    color: #6e5849;
+    margin-bottom: 0.5rem;
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+}
+.feature-card p {
+    color: #4b3a2f;
+    font-size: 1rem;
+}
+footer {
+    text-align: center;
+    padding: 1.2rem 0 0.7rem 0;
+    color: #6e5849;
+    font-size: 1rem;
+    background: transparent;
+    font-family: 'Times New Roman', Times, serif;
+}

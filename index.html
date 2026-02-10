@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport Portal - Home</title>
+    <!-- Google Fonts: Cinzel -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&display=swap" rel="stylesheet">
+    <!-- Internal CSS for navigation menu -->
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Times New Roman', Times, serif;
+            background: #e7e2d1;
+        }
+        header, nav {
+            font-family: 'Cinzel', serif;
+        }
+        nav {
+            background: #6e5849;
+            padding: 0.5rem 0;
+            box-shadow: 0 2px 8px rgba(110,88,73,0.08);
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1.5rem;
+        }
+        nav ul li a {
+            color: #f5e9da;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            transition: color 0.2s;
+        }
+        nav ul li a:hover {
+            color: #bfa980;
+        }
+    </style>
+    <!-- External CSS link for page layout -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 style="color: #4b3a2f; font-size: 2.7rem; margin: 0; text-align: center; letter-spacing: 2px; font-family: 'Cinzel', serif; font-weight: 900;">Welcome to the Transport Portal</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Book Ticket</a></li>
+            <li><a href="routecard.html">Routes</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="intro">
+            <h2>About Our Portal</h2>
+            <p>
+                The Transport Portal is your one-stop solution for booking tickets, checking routes, and managing your travel with ease. Enjoy a seamless experience with our user-friendly interface and reliable services.
+            </p>
+        </section>
+        <section class="features">
+            <div class="feature-card">
+                <h3>Easy Booking</h3>
+                <p>Book your tickets in just a few clicks with our intuitive booking system.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Live Route Info</h3>
+                <p>Get real-time updates on routes, timings, and seat availability.</p>
+            </div>
+            <div class="feature-card">
+                <h3>24/7 Support</h3>
+                <p>Our support team is available round the clock to assist you.</p>
+            </div>
+        </section>
+    </main>
+    <footer style="margin-top: auto;">
+        <p>&copy; 2026 Transport Portal. All rights reserved.</p>
+    </footer>
+</body>
+</html>

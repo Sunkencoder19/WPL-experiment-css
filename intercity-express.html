@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intercity Express</title>
+    <!-- Google Fonts: Cinzel -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&display=swap" rel="stylesheet">
+    <!-- External CSS for hover effects and layout -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Internal CSS for menu -->
+    <style>
+        header, nav {
+            font-family: 'Cinzel', serif;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #6e5849;
+            padding: 0.5rem 2rem;
+            box-shadow: 0 2px 8px rgba(110,88,73,0.08);
+        }
+        .navbar-menu {
+            display: flex;
+            gap: 2rem;
+        }
+        .navbar-menu a {
+            color: #f5e9da;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            transition: color 0.2s;
+        }
+        @media (max-width: 700px) {
+            .navbar {
+                flex-direction: column;
+                align-items: stretch;
+                padding: 0.5rem 0.7rem;
+            }
+            .navbar-menu {
+                flex-direction: column;
+                gap: 0.7rem;
+                margin-top: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body style="font-family: 'Times New Roman', Times, serif; background: #f8f4e6; color: #4b3a2f;">
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo" style="display: flex; align-items: center;">
+                <img src="logo-rail-removebg-preview.png" alt="Intercity Express Logo" style="height: 48px; margin-right: 1rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(110,88,73,0.10);">
+                <span style="font-size: 2rem; color: #fff; font-family: 'Cinzel', serif; font-weight: 900; letter-spacing: 2px;">Intercity Express</span>
+            </div>
+            <div class="navbar-menu">
+                <a href="index.html">Home</a>
+                <a href="#">Book Ticket</a>
+                <a href="#">Routes</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section style="max-width: 900px; margin: 2rem auto; background: #fff; border-radius: 16px; box-shadow: 0 4px 24px rgba(110,88,73,0.10); padding: 2rem 2.5rem;">
+            <h2 style="font-family: 'Cinzel', serif; color: #6e5849; text-align: center;">Welcome to Intercity Express Portal</h2>
+            <p style="font-size: 1.1rem; color: #4b3a2f; text-align: center;">Book your tickets, check routes, and manage your intercity travel with ease. Enjoy a seamless experience with our user-friendly interface and reliable services.</p>
+        </section>
+    </main>
+    <footer style="text-align: center; padding: 1.2rem 0 0.7rem 0; color: #6e5849; font-size: 1rem; background: transparent; font-family: 'Times New Roman', Times, serif; margin-top: auto;">
+        <p>&copy; 2026 Intercity Express Portal. All rights reserved.</p>
+    </footer>
+</body>
+</html>
